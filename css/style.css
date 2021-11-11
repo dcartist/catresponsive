@@ -1,4 +1,4 @@
-
+/* The top css is basically default. Keep your media queries at the bottom!!! */
 body {
     overflow: hidden; /* Hide scrollbars */
     background: url('/images/background.svg')
@@ -18,11 +18,12 @@ p{
     text-align: center;
 }
 
+/* If the images I want is 90 vw as default */
 img {
     width: 90vw;
 }
 
-
+/* This is a default, but added it at the bottom just because I have min-width (minimum width) on the tablet and i didn't have a max-width which would contain it to what I wanted. */
 .Kitten, .Medium-Cat {
     display: none;
 }
@@ -33,7 +34,7 @@ img {
 
 
 
-
+/* Great size for mobile. This is saying the max-width 600px and smaller use these changes*/
 @media only screen and (max-width: 600px) {
     .Kitten {
     display: block;
@@ -43,7 +44,8 @@ img {
 }
 }
 
-
+/* Good for tablet, but you can put a max-width (max-width: 992px) to cap the size.  This is saying the min-width 600px and large use these changes. Yes you can add more than one "and" you can have multiple ands
+ @media only screen and (min-width: 600px) and (max-width: 992px) */
 @media only screen and (min-width: 600px) {
     .Kitten, .Large-Cat {
     display: none;
@@ -57,7 +59,7 @@ img {
 }
 }
 
-
+/* added the desktop because I didn't put a max width on the tablet. This is saying the min-width 992 and large use these changes */
 @media only screen and (min-width: 992px) {
     
     .Kitten, .Medium-Cat {
