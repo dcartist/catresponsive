@@ -1,0 +1,76 @@
+
+body {
+    overflow: hidden; /* Hide scrollbars */
+    background: url('/images/background.svg')
+  }
+
+.cat-base{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-height: 99vh;
+}
+
+h1 {
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+img {
+    width: 90vw;
+}
+
+
+.Kitten, .Medium-Cat {
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .Kitten {
+    display: block;
+}
+.Medium-Cat, .Large-Cat {
+    display: none;
+}
+}
+
+
+@media only screen and (min-width: 600px) {
+    .Kitten, .Large-Cat {
+    display: none;
+}
+
+.Medium-Cat {
+    display: block;
+}
+img {
+    width: 85vw;
+}
+}
+
+
+@media only screen and (min-width: 992px) {
+    
+    .Kitten, .Medium-Cat {
+        display: none;
+    }
+
+    .Large-Cat {
+        display: block;
+    }
+
+    img {
+        width: 65vw;
+    }
+    
+    
+}
