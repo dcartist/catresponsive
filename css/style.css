@@ -38,7 +38,7 @@ svg {
     margin: -90px 0 0 0;
     padding: 0;
     /* animation-delay: 1.2s; */
-    animation-duration: 4400ms;
+    animation-duration: 5400ms;
     /* animation-iteration-count: 1; */
     animation-name: fadeIn;
 }
