@@ -1,0 +1,40 @@
+.cats-in-boxes {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+}
+
+@media only screen and (max-width: 600px) {
+    .cats-in-boxes {
+        display: flex;
+        /* grid-template-columns: repeat(1,1fr); */
+    
+    }
+    img {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 992px){
+
+    .cats-in-boxes {
+        grid-template-columns: repeat(3,1fr);
+    
+    }
+    img {
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (min-width: 900px) {
+    .cats-in-boxes {
+        grid-template-columns: repeat(4,1fr);
+    
+    }
+    img {
+        width: 100%;
+    }
+}

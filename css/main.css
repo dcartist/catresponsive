@@ -1,0 +1,27 @@
+.top{
+    display: flex;
+    align-content: center;
+    
+      }
+    
+    .top img {
+        vertical-align: middle;
+        margin: 2px 10px;
+    }
+    
+    .top a {
+        color: black;
+        font-size: 17px;
+        /* font-weight: 600; */
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .cat-selection ul {
+        list-style-type: none;
+    }
+    .cat-selection  ul li a{
+        color: black;
+        text-decoration: none;
+
+    }
